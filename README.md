@@ -1,87 +1,125 @@
-# 02 Advanced CSS: Portfolio
+# Module 1 Challenge
 
-## Your Task
+Before you get started on your first Challenge, review the elements that you'll find in each assignment.
 
-Welcome to this week's Challenge! This week, you'll build a portfolio page.
+## Challenge Elements
 
-A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it. Students who have portfolios with deployed web applications (meaning they are live on the web) are typically very successful in their career search after the boot camp. This last point can’t be stressed enough: having several deployed projects is a minimum requirement to receive an initial interview at many companies.
+Challenges adhere to a format that's commonly used by software development teams that use **agile project management** to manage their work. Practicing this will prepare you for the workflows you'll experience as a professional developer.
 
-With these points in mind, in this Challenge you’ll set yourself up for future success by applying the core skills you've recently learned: flexbox, media queries, and CSS variables. You'll get to practice your new skills while creating something that you will use during your job search. It’s a win-win that you'll likely be grateful for in the future!
+> **deep dive** To learn more about agile, read this [Wikipedia article on agile software development](https://en.wikipedia.org/wiki/Agile_software_development).
 
-**note** If you don't have enough web applications to showcase at this point, use placeholder images and names. You can change them to real applications as you create them later in the course. However, at least one application should be live. So you can add on Challenge 1's deployed application or Module's 1 Mini Project's deployed application.
+Each Challenge contains the following elements:
 
-Let’s take a look at what a user story written from the perspective of a hiring manager might look like. As you might remember from your first Challenge, we follow the AS AN / I WANT / SO THAT format.
+* **User Story**: This is a short, simple description of a feature told from the perspective of the person who is requesting the new capability, usually a user or customer of the system. This follows an AS AN / I WANT / SO THAT format. For example, "AS A shopper visiting an online store, I WANT to place items in a shopping cart, SO THAT I can purchase them." 
 
-## User Story
+* **Acceptance Criteria**: These are the requirements that you must meet to satisfy the scope of work. They are not exhaustive, but they do entail the minimum aspects of a working solution. Consider this a checklist of baseline requirements. Acceptance criteria can be presented in various ways. In this case, we'll use a common format called **scenario-oriented criteria** which expresses each requirement in a WHEN / THEN format. Don't worry if this doesn't make sense now; it will become very familiar to you after you complete a couple of challenges. 
+
+* **Mock-up**: This is an image or animation that demonstrates the design and functionality of the web application that you'll build for the Challenge.
+
+## HTML CSS Git Challenge: Code Refactor
+
+This week's challenge involves a very important aspect of web development: **accessibility**. 
+
+One of the most common tasks for front-end and junior developers is to take existing code and refactor it (recall that to refactor code is to improve it without changing what it does) to meet a certain set of standards or implement a new technology. In this Challenge, a marketing agency has hired you to refactor an existing site to make it more accessible. 
+
+> **note** Your coursework this week will prepare you with all the skills that you need to succeed on this assignment!
+
+Web accessibility is an increasingly important consideration for businesses. It ensures that people with disabilities can access a website using assistive technologies such as video captions, screen readers, and braille keyboards. Making a website accessible is also good for business for many reasons, one of them being that accessible sites are better positioned in search engines like Google. It also helps companies avoid litigation that can occur when people with disabilities can't access their website.
+
+Even though accessibility is a broad topic that can include complex requirements, your tech lead has given you a small list of specific criteria to satisfy the project. These criteria are documented in the Acceptance Criteria section.
+
+> **important** An important rule to follow when working with someone else's code is the **Scout Rule**, which recommends that you always leave the code a little cleaner than when you found it.
+
+To impress clients, you should always go the extra mile and improve the codebase for long-term sustainability. For example, make sure that all links are functioning correctly. Also, rework the CSS to make it more efficient by consolidating CSS selectors and properties, organizing them to follow the semantic structure of the HTML elements, and including comments before each element or section of the page.
+
+Are you ready to jump in? Here are this week's challenge requirements: 
+
+### User Story
 
 ```md
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+AS A marketing agency
+I WANT a codebase that follows accessibility standards
+SO THAT our own site is optimized for search engines
 ```
 
-## Acceptance Criteria
-
-Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
+### Acceptance Criteria
 
 ```md
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+GIVEN a webpage meets accessibility standards
+WHEN I view the source code
+THEN I find semantic HTML elements
+WHEN I view the structure of the HTML elements
+THEN I find that the elements follow a logical structure independent of styling and positioning
+WHEN I view the image elements
+THEN I find accessible alt attributes
+WHEN I view the heading attributes
+THEN they fall in sequential order
+WHEN I view the title element
+THEN I find a concise, descriptive title
 ```
 
-## Mock-Up
+### Mock-Up
 
-The following animation shows the web application's appearance and functionality:
+> **note** This layout is designed for "desktop", so you may notice that some of the elements don't look like the Mock-Up when viewed at a resolution smaller than 768px. In future lessons, you will learn how to make elements "responsive" so that your web application is optimized for any screen size.
 
-![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
+The following image shows the web application's appearance and functionality:
+
+![A webpage titled "Horiseon" features a navigation menu in the header, a hero image, various sections, and more.](https://static.bc-edx.com/coding/software-dev/01-HTML-Git-CSS/assets/01-html-css-git-homework-demo.png)
+
+## Getting Started
+
+This is an autograded assignment, meaning that you will follow the link below to open the assignment in a new window in the Ed platform. You will modify the existing starter code files to meet the requirements listed below.
+
+> **note** If you need any assistance with the Ed platform, please review the information on submitting assignments in Module 0.
 
 ## Grading Requirements
 
-This Challenge is graded based on the following criteria:
+This Challenge is graded based on the following criteria: 
 
-### Semantic Elements 70%
+### Semantic Elements 42%
 
 * The HTML must have:
 
-  * a `header` element. (10 points)
+    * a `header` element. (7 points)
 
-  * a `title` element. (10 points)
+    * a `nav` element. (7 points)
+    
+    * a `main` element. (7 points)
 
-  * a `meta` element for the `viewport`. (10 points)
+    * more than one `section` element. (7 points)
+    
+    * an `aside` element. (7 points)
 
-  * a linked stylesheet. (10 points)
+    * a `footer` element. (7 points)
 
-  * a `nav` element. (10 points)
+### Alt Attributes on Images 12%
 
-  * more than one `section` element. (10 points)
+* Each of the six images must have alt text. (2 points each)
 
-### Alt Attributes on Images 10%
+### Title is Updated 6%
 
-* At least five images with alt text. (2 points each)
+* The title of the page must be updated. (6 points)
 
-### Navigation Links 10%
+### CSS is Applied to HTML 40%
 
-* A navigation link for each section. (10 points)
+You'll need to update the CSS so that it matches the semantic HTML elements. Once you've updated the CSS, the following must be true:
 
-### CSS is Responsive 10%
+* The `header` element should have a background color of `#2a607c`. (4 points)
 
-You'll need to update the CSS so that it contains media queries to make the page responsive. When the page width is less than 768px, the portfolio columns should stack and be the same height.
+* The `header` element should have a text color of `#ffffff`. (4 points)
+
+* The first three images should have a `height` of `200px`. (4 points each)
+
+* The last three images should have a `height` of `150px`. (4 points each)
+
+* The `footer` element should have `30px` padding. (4 points)
+
+* The text in the `footer` element should be centered. (4 points)
 
 ## How to Submit the Challenge
 
-Follow the link below to open this autograded assignment in a new tab. Once you have completed the assignment in the Ed platform, press the Mark button to see your score. Remember that you can submit the assignment as many times as you want by pressing the Mark button. Once you've achieved the grade you want, simply close the Ed tab in your browser.
+Follow the link below to open this autograded assignment in a new tab. Once you have completed the assignment in the Ed platform, submit it and you will return to Bootcamp Spot.
 
 > **note** You are allowed to miss up to two Challenge assignments and still earn your certificate. If you complete all Challenge assignments, your lowest two grades will be dropped. If you wish to skip this assignment, click Next, and move on to the next Module.
 
-**important** No matter how difficult the course becomes, you must always turn in original work. Plagiarism is not tolerated. If your instructional or support staff determine that you have plagiarized work, your Student Success Advisor will determine the appropriate course of action based on university policy. Such actions may include, but are not limited to, a documented plagiarism discussion, an incomplete or failing grade assignment, or ineligibility for graduation.
+> **important** No matter how difficult the course becomes, you must always turn in original work. Plagiarism is not tolerated. If your instructional or support staff determine that you have plagiarized work, your Student Success Advisor will determine the appropriate course of action based on university policy. Such actions may include, but are not limited to, a documented plagiarism discussion, an incomplete or failing grade assignment, or ineligibility for graduation.

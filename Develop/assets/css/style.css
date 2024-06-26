@@ -1,229 +1,200 @@
 * {
-  box-sizing: border-box;
-}
-
-/* brand color palette */
-:root {
-  --primary: rgba(68, 88, 119, 1);
-  --secondary: rgba(146, 204, 206, 1);
-  --tertiary: rgba(49, 52, 61, 1);
-  --dark: rgba(28, 29, 33, 1);
-  --light: rgba(238, 238, 247, 1);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: var(--primary);
-  background-color: var(--light);
-  line-height: 1.5;
+    background-color: #d9dcd6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 p {
-  margin: 0;
+    font-size: 16px;
 }
 
-header {
-  padding: 15px 6% 15px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: var(--tertiary);
-  box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-header h1 {
-  color: var(--tertiary);
-  background-color: var(--secondary);
-  padding: 5px 1% 5px 6%;
-  margin: 0;
-  font-size: 4vw;
-  line-height: 1;
+.float-left {
+    float: left;
+    margin-right: 25px;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.float-right {
+    float: right;
+    margin-left: 25px;
 }
 
-nav a {
-  text-decoration: none;
-  padding: 5px 10px;
-  color: var(--secondary);
-  margin-right: 10px;
-  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: bottom;
-  transition: all 0.25s ease-in;
-  font-size: 1.4rem;
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
 }
 
-nav a:hover {
-  background-size: 100% 100%;
-  color: var(--primary);
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
 }
 
-nav a:last-child {
-  margin-right: 0;
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
 }
 
-main {
-  margin-top: 20px;
-  margin-bottom: 45px;
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
 }
 
-.hero-banner {
-  background: rgb(68, 88, 120);
-  background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: soft-light;
-  min-height: 30vh;
-  color: var(--light);
-  padding: 2% 6%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  text-align: right;
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
 }
 
-.hero-banner div {
-  flex: 0 0 90%;
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.hero-banner h2 {
-  background-color: var(--secondary);
-  color: var(--tertiary);
-  margin: 0;
-  padding: 5px 10px;
-  font-size: 2.3rem;
-  line-height: 1.2;
-  display: inline;
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.page-wrapper {
-  max-width: 88%;
-  margin-left: auto;
-  margin-right: auto;
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.page-section {
-  margin: 25px 0;
-  padding: 10px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-between;
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
-.page-section > h2 {
-  flex: 0 0 20%;
-  text-align: right;
-  padding-right: 15px;
-  border-right: 4px solid var(--primary);
-  font-size: 4vw;
-  line-height: 1.1;
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
-.page-section > div {
-  flex: 0 0 77%;
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
-.page-section p {
-  margin-bottom: 20px;
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
 
-.flex-item {
-  border: 5px solid var(--secondary);
-  background-color: var(--primary);
-  color: var(--tertiary);
-  min-height: 150px;
-  max-height: 150px;
-  flex-basis: calc(50% - 1em);
-  display: flex;
-  align-items: flex-end;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
-  text-decoration: none;
-  background-blend-mode: soft-light;
-  background-size: 150%;
-  transition: all 0.5s;
-  font-size: 0.9rem;
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
 
-/* feature first portfolio item */
-.flex-item:first-child {
-    min-height: 400px;
-    flex-basis: 100%;
+.search-engine-optimization img {
+    max-height: 200px;
 }
 
-.flex-item:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+.online-reputation-management img {
+    max-height: 200px;
 }
 
-.flex-item div {
-  background-color: var(--secondary);
-  padding: 8px 10px;
+.social-media-marketing img {
+    max-height: 200px;
 }
 
-.flex-item h3 {
-  font-size: 1.6rem;
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
-.contact address {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
-.contact address a {
-  color: var(--tertiary);
-  padding: 5px;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-style: normal;
-  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: bottom;
-  transition: all 0.25s ease-in;
-  margin: 0 0.2rem 0.1rem;
-  display: inline-block;
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
-.contact address a:hover {
-  background-size: 100% 88%;
-  color: var(--secondary);
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
-/* portfolio project images */
-/* TODO: Add portfolio project images here*/
-
-/* media queries */
-
-/* TODO: add media query for a max-width of 980px */
-
-/* TODO: add media query for a max-width of 768px */
+.footer h2 {
+    font-size: 20px;
+}
